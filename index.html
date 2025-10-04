@@ -1,290 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Bhargav K</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo"> Bhargav K</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargava K - Cyber Security Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- Simple Glass Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="#profile" class="logo">Bhargava K</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
     </nav>
+
+    <!-- Hero Section -->
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Bhargav K profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Bhargav K</h1>
-        <p class="section__text__p2">Cyber Security Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/kbreddy'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.combhargava-k'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="Pass"> 
-      <h1 class="title">Strength Checker</h1> 
-      <label for="password" class="experience-sub-title">Enter your password:</label><br/>
-      <input type="password" id="password" onkeyup="checkPasswordStrength()"class="experience-sub-title">
-      <div id="capsule-container"class="experience-sub-title">
-          <span class="capsule" id="capsule1"></span>
-          <span class="capsule" id="capsule2"></span>
-          <span class="capsule" id="capsule3"></span>
-      </div>
-      <p id="password-strength" class="strength"></p>
-      <br>
-      <br>
-      <br>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>5+ years <br />Cyber Security</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech Bachelors Degree<br />Cyber Security Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Dedicated cybersecurity professional with hands-on experience managing advanced security initiatives through proficiency in cybersecurity, network automation, compliance assurance, and incident response. Skilled in coordinating with teams to deploy cutting-edge security solutions, enforce security policies, and reduce operational disruptions, fortifying defenses against evolving threats and saving costs in potential damages. Capable of conducting assessments to identify vulnerabilities and strengthen infrastructures. Committed to reducing risk exposure and minimizing data breaches while staying abreast of emerging technologies and best practices to preserve organizational reputation.
-
+        <div class="hero-content fade-in-up">
+            <img src="./assets/profile-pic.png" alt="Bhargava K" class="hero-image">
+            <h1 class="hero-title">Bhargava K</h1>
+            <p class="hero-subtitle">Cyber Security Analyst</p>
+            <p class="hero-description">
+                Security Analyst with practical experience in vulnerability management, endpoint security, 
+                and cloud infrastructure protection. I focus on identifying and remediating security risks 
+                across macOS, Linux, and multi-cloud environments.
             </p>
-          </div>
+            <div class="btn-container">
+                <a href="./assets/Bhargava-kikkuru-resume.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div id="socials-container">
+                <div class="icon" onclick="location.href='https://linkedin.com/in/kbreddy'">
+                    <img src="./assets/linkedin.png" alt="LinkedIn">
+                </div>
+                <div class="icon" onclick="location.href='https://github.com/bhargava-k'">
+                    <img src="./assets/github.png" alt="GitHub">
+                </div>
+            </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know more about my background and expertise</p>
+        <div class="about-content">
+            <img src="./assets/about-pic.png" alt="About Bhargava" class="about-image">
+            <div>
+                <p class="about-text">
+                    Security Analyst with practical experience in vulnerability management, endpoint security, 
+                    and cloud infrastructure protection. I focus on identifying and remediating security risks 
+                    across macOS, Linux, and multi-cloud environments while automating security processes to 
+                    improve efficiency. My background includes threat modeling, compliance implementation, 
+                    and working with engineering teams to build security into products from the ground up. 
+                    I hold certifications in Security+, CEH, and AWS Security Specialty, with a Master's 
+                    degree in Cybersecurity.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>5+ Years</h3>
+                        <p>Cyber Security Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Master's Degree</h3>
+                        <p>Cybersecurity from Illinois Institute of Technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-
-          <div class="details-container">
-            <h2 class="experience-sub-title">Cyber Security Tools</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Nmap</h3>
-                  <p>Advanced</p>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My professional journey in cybersecurity</p>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-icon">
+                        <img src="./assets/experience.png" alt="Experience">
+                    </div>
+                    <div>
+                        <h3 class="experience-title">Cyber Security Analyst</h3>
+                        <p class="experience-company">B.I.R. Solutions</p>
+                        <p class="experience-duration">Jun 2024 - Present • Reno, Nevada</p>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Metasploit</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Wireshark</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NESSUS</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
             </div>
-          </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-icon">
+                        <img src="./assets/experience.png" alt="Experience">
+                    </div>
+                    <div>
+                        <h3 class="experience-title">Cyber Security Analyst</h3>
+                        <p class="experience-company">Chotu-Share Cart Technologies</p>
+                        <p class="experience-duration">Dec 2020 - Sep 2022 • Hyderabad, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-icon">
+                        <img src="./assets/experience.png" alt="Experience">
+                    </div>
+                    <div>
+                        <h3 class="experience-title">Cyber Security Analyst Intern</h3>
+                        <p class="experience-company">Madiee Games</p>
+                        <p class="experience-duration">Jan 2019 - Dec 2020 • Chennai, India</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming & Scripting</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PowerShell</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">React</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Cloud Security</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">AWS Services</span>
+                    <span class="skill-tag">CloudTrail</span>
+                    <span class="skill-tag">GuardDuty</span>
+                    <span class="skill-tag">Security Hub</span>
+                    <span class="skill-tag">CloudWatch</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>SIEM & Monitoring</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Splunk ES</span>
+                    <span class="skill-tag">Azure Sentinel</span>
+                    <span class="skill-tag">QRadar</span>
+                    <span class="skill-tag">ELK Stack</span>
+                    <span class="skill-tag">MITRE ATT&CK</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Penetration Testing</h3>
+                <div class="skill-list">
+                    <span class="skill-tag">Burp Suite</span>
+                    <span class="skill-tag">OWASP ZAP</span>
+                    <span class="skill-tag">Metasploit</span>
+                    <span class="skill-tag">Nessus</span>
+                    <span class="skill-tag">Nmap</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Some of my recent cybersecurity projects</p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./assets/project-1.png" alt="Interview Proxy Detection System" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Interview Proxy Detection System</h3>
+                    <p class="project-description">
+                        Python web app that prevents cheating in remote interviews by detecting unauthorized 
+                        remote access tools like TeamViewer or AnyDesk. Increased hiring process integrity by 98%.
+                    </p>
+                    <a href="https://github.com/bhargava-k/Interview-Proxy-Detection-system" class="project-btn" target="_blank">View Project</a>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Interview Proxy Detection System</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/bhargava-k/Interview-Proxy-Detection-system'"
-              >
-                Github
-              </button>
-              
-              </button>
+            <div class="project-card">
+                <img src="./assets/project-2.png" alt="OSINT Application" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">OSINT Application</h3>
+                    <p class="project-description">
+                        Secure GUI application for ethical data collection and visualization of public social 
+                        media data for research and analysis. Built with Python Tkinter and secure API integration.
+                    </p>
+                    <a href="https://github.com/bhargava-k/OSNIT" class="project-btn" target="_blank">View Project</a>
+                </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+            <div class="project-card">
+                <img src="./assets/project-3.png" alt="Digital Signage Security Platform" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Digital Signage Security Platform</h3>
+                    <p class="project-description">
+                        Secure IoT-based digital signage system with Flask dashboard, encrypted communications, 
+                        and authentication controls. Improved remote management efficiency by 40%.
+                    </p>
+                    <a href="https://github.com/bhargava-k" class="project-btn" target="_blank">View Project</a>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">OSNIT <br> Application</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/bhargava-k/OSNIT'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">bhargavareddy@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/kbreddy/">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
 
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss cybersecurity opportunities</p>
+        <div class="contact-content">
+            <div class="contact-info">
+                <a href="mailto:bhargavakikkuru@gmail.com" class="contact-item">
+                    <div class="contact-icon">
+                        <img src="./assets/email.png" alt="Email">
+                    </div>
+                    <span>bhargavakikkuru@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/kbreddy/" class="contact-item" target="_blank">
+                    <div class="contact-icon">
+                        <img src="./assets/linkedin.png" alt="LinkedIn">
+                    </div>
+                    <span>LinkedIn Profile</span>
+                </a>
+            </div>
         </div>
-      </nav>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2024 Bhargava K. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
